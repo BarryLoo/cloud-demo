@@ -1,0 +1,42 @@
+spring:
+  devtools:
+    restart:
+      log-condition-evaluation-delta: true
+      enabled: true
+    livereload:
+      enabled: true
+      port: 35729
+    remote:
+      restart:
+        enabled: true
+  cloud:
+    refresh:
+      extra-refreshable: true
+    service-registry:
+      auto-registration:
+        register-management: true
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    healthcheck:
+      enabled: true
+management:
+  endpoints:
+    jmx:
+      exposure:
+        include: '*'
+    web:
+      exposure:
+        include: '*'
+      cors:
+        allowed-headers: '*'
+        allowed-methods: '*'
+        allowed-origins: '*'
+  endpoint:
+    health:
+      show-details: always
+    logfile:
+      enabled: true
+    restart:
+      enabled: true

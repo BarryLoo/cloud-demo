@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  rabbitmq:
+    restart: always
+    network_mode: bridge
+    container_name: rabbitmq
+    hostname: rabbitmq
+    image: rabbitmq:3.7.8-management
+    ports:
+      - 10601:5672
+      - 10602:15672
+      - 10603:25672

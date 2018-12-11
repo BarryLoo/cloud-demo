@@ -1,0 +1,34 @@
+logging:
+  file: /var/log/cloud/${spring.application.name}/${spring.application.name}.log
+  path: /var/log/cloud/${spring.application.name}/
+spring:
+  application:
+    name: configserver
+  devtools:
+    restart:
+      log-condition-evaluation-delta: true
+      enabled: true
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: configserver
+      server:
+        default-label: master
+        default-profile: application.yml
+        git:
+          uri: https://github.com/BarryLoo/docker-compose
+          search-paths: config
+eureka:
+  instance:
+    prefer-ip-address: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+    restart:
+      enabled: true
