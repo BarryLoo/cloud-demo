@@ -7,10 +7,11 @@ spring:
   application:
     name: application
   datasource:
-    url: jdbc:mysql://mysql:3306/test
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: 123456
-    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://mysql:3306/test
   jpa:
     show-sql: true
     hibernate:
