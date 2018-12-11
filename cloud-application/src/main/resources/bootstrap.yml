@@ -1,0 +1,39 @@
+logging:
+  file: /var/log/cloud/${spring.application.name}/${spring.application.name}.log
+  path: /var/log/cloud/${spring.application.name}/
+server:
+  port: 8080
+spring:
+  application:
+    name: application
+  datasource:
+    url: jdbc:mysql://mysql:3306/test
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: configserver
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.0.106:10699/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+    restart:
+      enabled: true
