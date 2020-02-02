@@ -1,13 +1,13 @@
 # Introduction
-¸ÃÏîÄ¿²ÉÓÃÁË Spring Cloud Finchley.SR2 °æ±¾Íê³É¼¯Èº¹¹¼Ü£¬±¾°æ±¾°üº¬ÁË Admin¼à¿Ø£¬Bus¿ØÖÆ×ÜÏß£¬ConfigÅäÖÃÖĞĞÄÒÔ¼°Registry×¢²áÖĞĞÄ¡£</br>
+è¯¥é¡¹ç›®é‡‡ç”¨äº† Spring Cloud Hoxton.SR1 ç‰ˆæœ¬å®Œæˆé›†ç¾¤æ„æ¶ï¼Œæœ¬ç‰ˆæœ¬åŒ…å«äº† Adminç›‘æ§ï¼ŒBusæ§åˆ¶æ€»çº¿ï¼ŒConfigé…ç½®ä¸­å¿ƒä»¥åŠRegistryæ³¨å†Œä¸­å¿ƒã€‚</br>
 
 ## Context
-Basic-pom»ù´¡ÏîÄ¿pom£¬¶Ô°æ±¾×ö¹ÜÀí¿ØÖÆ</br>
-Cloud-Admin¶Ô¼¯ÈºÓ¦ÓÃ×ö¼à¿Ø</br>
-Cloud-ConfigÅäÖÃ×Ü¿ØÖÆ</br>
-Registry×¢²áÖĞĞÄ</br>
+Basic-pomåŸºç¡€é¡¹ç›®pomï¼Œå¯¹ç‰ˆæœ¬åšç®¡ç†æ§åˆ¶</br>
+Cloud-Adminå¯¹é›†ç¾¤åº”ç”¨åšç›‘æ§</br>
+Cloud-Configé…ç½®æ€»æ§åˆ¶</br>
+Registryæ³¨å†Œä¸­å¿ƒ</br>
 
 ## Reference
-* BootÅäÖÃ²Î¿¼[Spring Boot](https://docs.spring.io/spring-boot/docs/2.0.6.RELEASE/reference/htmlsingle/)</br>
-* CloudÅäÖÃ²Î¿¼[Spring Cloud](https://cloud.spring.io/spring-cloud-static/Finchley.SR2/single/spring-cloud.html)</br>
-* DockerÅäÖÃ²Î¿¼[Docker](https://docs.docker.com/compose/compose-file)</br>
+* Booté…ç½®å‚è€ƒ[Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)</br>
+* Cloudé…ç½®å‚è€ƒ[Spring Cloud](https://cloud.spring.io/spring-cloud-static/current/reference/htmlsingle/)</br>
+* Dockeré…ç½®å‚è€ƒ[Docker](https://docs.docker.com/compose/compose-file)</br>
